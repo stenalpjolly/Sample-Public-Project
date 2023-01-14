@@ -1,17 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('Echo') {
+        stage('Setup') {
             steps {
                 echo 'Hello World!'
             }
         }
-        stage('Print') {
+        stage('Build') {
             steps {
                 echo 'This is the second stage'
             }
         }
-        stage('Finish') {
+        stage('Cleanup') {
             steps {
                 echo 'This is the final stage'
             }
